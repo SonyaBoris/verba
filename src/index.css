@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+  background-color: #212121;
+  color: #fff;
+}
+
+.custom-container{
+  box-shadow: 0px 15px 60px #00FF7F;
+  outline: 1px solid #2b9962;
+}
+
+.svg-shine{
+
+  filter: blur(20px);
+  z-index: -1;
+  position: absolute;
+  opacity: 40%;
+  animation: anim 3s infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(-70px);
+  }
+
+  50% {
+    transform: translateY(-19px);
+  }
+
+  100% {
+    transform: translateY(-70px);
+  }
+}
